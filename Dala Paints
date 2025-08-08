@@ -1,0 +1,52 @@
+<!-- Mobile hamburger menu script added -->
+<script>
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+  }
+</script>
+
+<style>
+  /* Mobile nav styles */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #34495e;
+    color: white;
+    font-size: 20px;
+  }
+  @media (max-width: 600px) {
+    nav a { display: none; }
+    .menu-toggle { display: block; }
+    #nav-links.show a { display: block; margin: 10px 0; }
+  }
+</style>
+
+<header>…</header>
+<nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+  <div id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Our Products</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="products">
+  <h2>Our Products</h2>
+
+  <h3>Plascon Paints</h3>
+  <ul>
+    <li>Vinyl Matt – approx. KSh 2,415 for 4 L 0</li>
+    <li>Gloss (Super or Hi Gloss) – approx. KSh 2,448–2,805 for 4 L 1</li>
+    <li>WeatherGuard / WeatherGuard Extreme – around KSh 3,300 (special offer) 2</li>
+  </ul>
+
+  <h3>Crown Paints</h3>
+  <ul>
+    <li>Covermatt – KSh 5,000 for 20 L (approx.) 3</li>
+    <li>Silk Vinyl Emulsion – KSh 13,600 for 20 L (approx.) 4</li>
+    <li>Specialty: Squash Court Paint – KSh 1,079 for 4 L; Tennis Court Paint – KSh 3,417 for 4 L 5</li>
+  </ul>
+</section>
